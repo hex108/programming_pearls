@@ -45,6 +45,8 @@ void find_repeted_str(char *str)
         }
     }
     printf("%.*s\n", maxlen, a[maxi]);
+
+    free(a);
 }
 
 int main()
