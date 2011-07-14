@@ -8,7 +8,7 @@ int binary_search(int *a, int num, int t)
     //invariant: low < high && a[low] < t && a[high] >= t
     while(low + 1 != high){
         //printf("%d ~ %d\n", low, high);
-        int middle = (low + high) / 2;
+        int middle = low + (high - low) / 2;
         if(a[middle] < t){
             low = middle;
         }else{

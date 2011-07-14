@@ -9,7 +9,7 @@ int binary_search(int *a, int num, int t)
     
     while(end >= start){
         printf("%d ~ %d\n", start, end);
-        int middle = (start + end) / 2;
+        int middle = start + (end - start) / 2;
         int tmp = a[middle];
         if(tmp < t){
             start = middle + 1;
